@@ -4,6 +4,7 @@ function myFunction() {
     document.getElementById("frontalLobe").innerHTML =
         "<h3> The frontal lobes are important for voluntary movement, expressive language and for managing higher level executive functions. Executive functions refer to a collection of cognitive skills including the capacity to plan, organise, initiate, self-monitor and control one's responses in order to achieve a goal. ...</h3>";
 }
+
 document.getElementById("parietalLobe").addEventListener("mouseover", mySixthFunction);
 function mySixthFunction() {
     document.getElementById("parietalLobe").innerHTML
@@ -31,5 +32,26 @@ function mySecondFunction() {
 document.getElementById("spinalCord").addEventListener("mouseover", myThirdFunction);
 function myThirdFunction() {
     document.getElementById("spinalCord").innerHTML
-        = "<h3>It connects your brain to your lower back. Your spinal cord carries nerve signals from your brain to your body and vice versa. These nerve signals help you feel sensations and move your body. Any damage to your spinal cord can affect your movement or function.... <h3>"
+        = "<h3 id='afterMouseOver'>The spinal cord is a long, tube-like band of tissue. It connects your brain to your lower back. Your spinal cord carries nerve signals from your brain to your body and vice versa. These nerve signals help you feel sensations and move your body. .... <h3>"
 }
+
+
+var myName = "The Brain ";
+
+var red = [0, 100, 63];
+var orange = [40, 100, 60];
+var green = [75, 100, 40];
+var blue = [196, 77, 55];
+var purple = [280, 50, 60];
+var letterColors = [red, orange, green, blue, purple];
+
+drawName(myName, letterColors);
+
+if (10 < 3) {
+    bubbleShape = 'square';
+}
+else {
+    bubbleShape = 'circle';
+}
+
+bounceBubbles();
