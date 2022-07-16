@@ -15,30 +15,45 @@
   </head>
   <body>
     <canvas id="myCanvas"></canvas>
-    <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+    <div id="bubbleLettersContainer">
+        <script type="text/javascript" src="https://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
     <script type="text/javascript" src="main.js"></script>
-    
-    <div>
-        <h1> The brain is modularish</h1>
     </div>
-    <div>
+    
+    
+    <div >
+        <h1 class="border"> The brain is modularish</h1>
+    </div>
+    <div class="border">
        <p>
              What part of the brain does what and why should you care.
        </p>
     </div>
-    <div><img src="./assets/picture/brain/brain.jpg"></div>
+
+    <div class="brainPhoto"><img src="./assets/picture/brain/brain.jpg"></div>
     
-    <div><button id="frontalLobe">Frontal Lobe</button></div>
-    <div><button id="parietalLobe">Parietal Lobe</button></div>
-    <div><button id="temporalLobe">Temporal Lobe</button></div>
-    <div><button id="occipitalLobe">Occipital Lobe</button></div>
-    <div class="spinalcord"><button id="spinalCord">Spinal Cord</button></div>
-    <div><button id="cerebellum">Cerebellum</button></div>
+    <div ><button id="frontalLobe">Frontal Lobe</button></div>
+    <div ><button id="parietalLobe">Parietal Lobe</button></div>
+    <div ><button id="temporalLobe">Temporal Lobe</button></div>
+    <div ><button id="occipitalLobe">Occipital Lobe</button></div>
+    <div ><button id="spinalCord">Spinal Cord</button></div>
+    <div ><button id="cerebellum">Cerebellum</button></div>
+
    <br></br>
-   <div id="popup">
-    <img id="bottom" src="./assets/picture/brainFunction/Occipital-Lobe.jpg">
-    
+
+   <div class="brainPhoto">
+       <img  src="./assets/picture/brainFunction/Occipital-Lobe.jpg">
    </div>
+   
+<div class="border brainPhoto">
+    <button onclick="changeColor()" >Repaint! </button>
+</div>
+<div >
+    <iframe src="https://giphy.com/embed/l41lJ8ywG1ncm9FXW" width="100%" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/brain-neuroscience-visualization-l41lJ8ywG1ncm9FXW">via GIPHY</a></p>
+
+</div>
+   
+
   
        
 

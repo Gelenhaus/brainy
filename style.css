@@ -6,10 +6,37 @@ button {
     margin: 5px;
 }
 
+.bubbleLettersContainer{
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
 div {
+    
+    align-items: center ;
+    align-content: center;
+    justify-content: center;
+    
     margin: auto;
     width: 60%;
     text-align: center;
+}
+.border{
+    border: 2px solid rgb(101, 102, 104);
+  border-radius: 25px;
+}
+
+.brainPhoto{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 900px;
 }
 
 img{
