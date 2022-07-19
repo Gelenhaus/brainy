@@ -1,9 +1,6 @@
 //How do can I be dry with this code? How can we make it singular and not repeated?
-document.getElementById("frontalLobe").addEventListener("mouseover", myFunction);
-function myFunction() {
-    document.getElementById("frontalLobe").innerHTML =
-        "<h3> The frontal lobes are important for voluntary movement, expressive language and for managing higher level executive functions. Executive functions refer to a collection of cognitive skills including the capacity to plan, organise, initiate, self-monitor and control one's responses in order to achieve a goal. ...</h3>";
-}
+//This is for the buttons that expand when you mouseover them.
+
 document.getElementById("parietalLobe").addEventListener("mouseover", mySixthFunction);
 function mySixthFunction() {
     document.getElementById("parietalLobe").innerHTML
@@ -21,16 +18,20 @@ function myFourthFunction() {
         = "<h3>The occipital lobes sit at the back of the head and are responsible for visual perception, including colour, form and motion. Damage to the occipital lobe can include: Difficulty with locating objects in environment.... <h3>"
 }
 
+document.getElementById("spinalCord").addEventListener("mouseover", myThirdFunction);
+function myThirdFunction() {
+    document.getElementById("spinalCord").innerHTML
+        = "<h3 id='afterMouseOver'>The spinal cord is a long, tube-like band of tissue. It connects your brain to your lower back. Your spinal cord carries nerve signals from your brain to your body and vice versa. These nerve signals help you feel sensations and move your body. .... <h3>"
+}
 document.getElementById("cerebellum").addEventListener("mouseover", mySecondFunction);
 function mySecondFunction() {
     document.getElementById("cerebellum").innerHTML
         = "<h3>Maintenance of balance and posture. The cerebellum is important for making postural adjustments in order to maintain balance. Through its input from vestibular receptors and proprioceptors, it modulates commands to motor neurons to compensate for shifts in body position or changes in load upon muscles.... <h3>"
 }
-
-document.getElementById("spinalCord").addEventListener("mouseover", myThirdFunction);
-function myThirdFunction() {
-    document.getElementById("spinalCord").innerHTML
-        = "<h3 id='afterMouseOver'>The spinal cord is a long, tube-like band of tissue. It connects your brain to your lower back. Your spinal cord carries nerve signals from your brain to your body and vice versa. These nerve signals help you feel sensations and move your body. .... <h3>"
+document.getElementById("frontalLobe").addEventListener("mouseover", myFirstFunction);
+function myFirstFunction() {
+    document.getElementById("frontalLobe").innerHTML
+        = "<h3>Maintenance of balance and posture. The cerebellum is important for making postural adjustments in order to maintain balance. Through its input from vestibular receptors and proprioceptors, it modulates commands to motor neurons to compensate for shifts in body position or changes in load upon muscles.... <h3>"
 }
 
 //This is the canvas code.
@@ -66,3 +67,16 @@ function changeColor() {
     let newColor = getRandomColor();
     document.body.style.backgroundColor = newColor;
 }
+
+//the "replace child" code 
+function myFunction() {
+    // Select first child element:
+    const element = document.getElementById("myList").children[0];
+
+    // Create a new text node:
+    const newNode = document.createTextNode("The brain is 80 cubic inches - and is the wellspring of our life.");
+
+    // Replace the text node:
+    element.replaceChild(newNode, element.childNodes[0]);
+}
+

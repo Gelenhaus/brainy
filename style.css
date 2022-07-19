@@ -6,6 +6,9 @@ body {
 button {
     margin: 5px;
 }
+.howBig{
+margin-bottom: 100px;
+}
 
 .bubbleLettersContainer{
     align-items: center;
@@ -28,8 +31,8 @@ div {
 }
 
 .brainPhoto{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 125px;
+    margin-bottom: 125px;
 }
 canvas {
     padding-left: 0;
@@ -45,5 +48,14 @@ img{
     text-align: center;
     width: 50%;
     border-radius: 5%;
+   
 }
 
+.card {
+background-color: rgb(102, 95, 109);
+margin-bottom: 35px;
+}
+
+.carousel {
+    margin-bottom: 100px;
+}
